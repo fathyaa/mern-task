@@ -1,0 +1,65 @@
+GET http://localhost:5000/
+
+
+###
+POST http://localhost:5000/save/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "title" : "Faths",
+    "subtitle" : "iOS Dev",
+    "herodesc" : "Lorem ipsum dolor sit amet",
+    "experience": "2 years",
+    "projects": "10+",
+    "supports": "24 hours",
+    "aboutdesc": "Let's work with me"
+}
+
+###
+DELETE http://localhost:5000/hero/63e26cdb3551e3dc21ddc966 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title" : "Fathya",
+    "subtitle" : "Front-end Developer",
+    "herodesc" : "Lorem ipsum dolor sit amet"
+}
+
+###
+DELETE http://localhost:5000/delete/63e359dabb57904a296669c9 HTTP/1.1
+
+###
+POST http://localhost:5000/testi/63e35b66f2db78ef887461c0 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Sandi",
+    "occupation": "Front-end Dev",
+    "testi": "A partner that great to work with."
+}
+
+###
+POST http://localhost:5000/skills/63e35b66f2db78ef887461c0 HTTP/1.1
+Content-Type: application/json
+
+{
+    "skillname": "Notion",
+    "field": "Project Management"
+}
+
+###
+POST http://localhost:5000/contact/63e35b66f2db78ef887461c0 HTTP/1.1
+Content-Type: application/json
+
+{
+    "platform" : "Email",
+    "content" : "example@gmail.com"
+}
+
+###
+PATCH http://localhost:5000/update/63e35b66f2db78ef887461c0 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "abcd"
+}
